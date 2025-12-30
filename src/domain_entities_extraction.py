@@ -1,51 +1,39 @@
 from pathlib import Path
-import re
 import PyPDF2
-from nltk import Trie
-from soupsieve.util import lower
+import re
+from domain_entities_normalization import (extract_reference_tokens)
 
-# =========================
+
 # CONFIG
-# =========================
 
 PDF_DIR = Path("Data/Documents")
 
-PATTERNS = {
-    "invoice_number": re.compile(r"Invoice\s*#?:\s*([\w\-]+)", re.UNICODE),
-    "date": re.compile(r"Date\s*:\s*([\d]{1,2}/[\d]{1,2}/[\d]{2,4})"),
-    "total_amount": re.compile(r"Total\s*:\s*([€$£]?\s*[\d,.]+)", re.UNICODE),
-}
-
 terminalStrings = {
-        " §",
-        " чл.",
-        " член ",
-        " членове ",
-        # "арг.", арг. от edge case
-        " ал.",
-        " т.",
+    "§",
+    "чл.",
+    "член ",
+    "членове ",
+    "ал.",
+    "т.",
 }
 
-terminalData = {
-    " от "
-}
+search_window =  35
+
+# TRIE STRUCTURES
 
 class TrieRoot:
     def __init__(self):
-        self.children = []
+        self.children = []  # list[TrieNode]
+
 
 class TrieNode:
     def __init__(self, value="", isTerminal=False):
-        self.next = None
         self.value = value
         self.isTerminal = isTerminal
-
-    def print_node(self):
-        curr = self
-        while curr is not None:
-            curr = curr.next
+        self.next = None
 
     def getSize(self):
+        curr = self
         length = 0
         while curr is not None:
             curr = curr.next
@@ -53,104 +41,224 @@ class TrieNode:
         return length
 
 
-def constuctTrie(terminalStrings):
+def constructTrie(strings):
     root = TrieRoot()
 
-    for el in terminalStrings:
+    for s in strings:
         curr = root
-        for idx, char in enumerate(el):
-            newNode = TrieNode(char)
-            newNode.value = char
-            if(idx == len(el) -1):
-                newNode.isTerminal = True
-            if(curr == root):
-                curr.children.append(newNode)
+        for idx, ch in enumerate(s.lower()):
+            node = TrieNode(ch)
+            if idx == len(s) - 1:
+                node.isTerminal = True
+
+            if curr == root:
+                curr.children.append(node)
             else:
-                curr.next = newNode
-            curr = newNode
+                curr.next = node
+
+            curr = node
 
     return root
 
-def extract_text_from_pdf(pdf_path: Path) -> str:
-    text_chunks = []
+def is_next_digit(text: str, terminal_index: int) -> bool:
+    k = terminal_index + 1
+    n = len(text)
 
+    # прескачаме ВСИЧКИ whitespace символи
+    while k < n and text[k].isspace():
+        k += 1
+
+    return k < n and text[k].isdigit()
+
+# PDF TEXT EXTRACTION
+
+def extract_text_from_pdf(pdf_path: Path) -> str:
+    chunks = []
     with open(pdf_path, "rb") as f:
         reader = PyPDF2.PdfReader(f)
-
-        for page_num, page in enumerate(reader.pages, start=1):
-            page_text = page.extract_text()
-            if page_text:
-                text_chunks.append(page_text)
-
-    return "\n".join(text_chunks)
+        for page in reader.pages:
+            text = page.extract_text()
+            if text:
+                chunks.append(text)
+    return "\n".join(chunks)
 
 
-def parseDA(trie, text, i, next ):
-    starts = [x for x in trie.children if x.value == lower(text[i])]
-    if len(starts) > 0:
-        for start in starts:
-            curr = start
-            while curr is not None and i < len(text) and curr.value == lower(text[i]):
-                if curr.isTerminal:
-                    break
-                curr = curr.next
-                i += 1
-# =========================
-# MAIN
-# =========================
+# ABBREVIATION DETECTOR
+# >= 2 главни букви общо, позволени малки само по средата
+# Примери: АПК, ЗУБ, ИЗоБ, ЗЗдр
+def is_abbreviation(text: str, i: int) -> int:
+    n = len(text)
+
+    # boundary check – да не е в средата на ДУМА (буква)
+    if i > 0 and (text[i - 1].isalpha() or text[i - 1] == "/"):
+        return 0
+
+    j = i
+    upper_count = 0
+
+    while j < n:
+        ch = text[j]
+
+        if "А" <= ch <= "Я":
+            upper_count += 1
+        elif "а" <= ch <= "я":
+            if upper_count == 0:
+                return 0
+        else:
+            break
+        j += 1
+
+    if upper_count >= 2:
+        return j
+
+    return 0
+
+def is_eu_directive(text: str, i: int) -> int:
+    n = len(text)
+
+    # boundary: да не е в средата на дума/число
+    if i > 0 and text[i - 1].isalnum():
+        return 0
+
+    j = i
+
+    # първа група цифри (година)
+    digits1 = 0
+    while j < n and text[j].isdigit():
+        j += 1
+        digits1 += 1
+
+    if digits1 < 2 or digits1 > 4:
+        return 0
+
+    # задължителна /
+    if j >= n or text[j] != "/":
+        return 0
+    j += 1
+
+    # втора група цифри
+    digits2 = 0
+    while j < n and text[j].isdigit():
+        j += 1
+        digits2 += 1
+
+    if digits2 < 1 or digits2 > 3:
+        return 0
+
+    # опционално: /ЕО или /ЕС
+    if j < n and text[j] == "/":
+        if text[j:j+3] in ("/ЕО", "/ЕС"):
+            j += 3
+        else:
+            return 0
+
+    return j
+
+def is_any_abbreviation(text: str, i: int) -> int:
+    end = is_abbreviation(text, i)
+    if end:
+        return end
+
+    return is_eu_directive(text, i)
+
+
+# MAIN PARSER
 
 def main():
+    startTrie = constructTrie(terminalStrings)
 
-    trie = constuctTrie(terminalStrings)
-    trie2 = constuctTrie(terminalData)
-
-    for child in trie.children:
-        child.print_node()
+    references_count = 0
 
     for pdf_file in PDF_DIR.glob("*.pdf"):
-        # print(f"Processing: {pdf_file.name}")
+        print(f"\n--- {pdf_file.name} ---")
 
         text = extract_text_from_pdf(pdf_file)
 
-        datacount = 0
-        startcount = 0
+        text = re.sub(r"\s+", " ", text)
 
-        # Optional: normalize whitespace (very useful for PDFs)
-        # text = re.sub(r"\s+", " ", text)
         i = 0
-        while i < len(text):
-            starts = [x for x in trie.children if x.value == lower(text[i])]
-            if len(starts) > 0:
-                for start in starts:
-                    curr = start
-                    count1 = 0
-                    while curr is not None and i<len(text) and curr.value == lower(text[i]):
-                        if curr.isTerminal:
-                            starts2 = [x for x in trie2.children]
-                            startcount+=1
-                            if len(starts2) > 0:
-                                for start1 in starts2:
-                                    curr1 = start1
-                                    counter = 0
-                                    while curr1 is not None and i < len(text) and counter < 60:
-                                        if curr1.isTerminal:
-                                            print("really done", text[i-(counter+count1): i])
-                                            datacount+=1
-                                            break
-                                        if lower(text[i]) == curr1.value:
-                                                curr1 = curr1.next
-                                        i += 1
-                                        counter += 1
-                            else:
+        n = len(text)
+
+        tokens = []
+
+        while i < n:
+            starts = [x for x in startTrie.children if x.value == text[i].lower()]
+            if not starts:
+                i += 1
+                continue
+
+            matched_any_start = False
+
+            for start in starts:
+                curr = start
+                j = i
+
+                while curr is not None and j < n and curr.value == text[j].lower() :
+                    if curr.isTerminal and is_next_digit(text,j):
+                        matched_any_start = True
+                        start_idx = i
+                        k = j + 1
+                        found_stop = False
+
+                        while k < n and (k- j) <= search_window:
+                            # boundary защита
+                            if k > 0 and text[k - 1].isalnum():
+                                k += 1
+                                continue
+
+                            end_abbreviation_idx = is_any_abbreviation(text, k)
+                            if end_abbreviation_idx > 0:
+                                references_count+=1
+                                law_reference = text[k:end_abbreviation_idx]
+
+                                tokens.extend(extract_reference_tokens(
+                                    text,
+                                    start_idx,
+                                    k,
+                                    law_reference
+                                ))
+
+                                # remove law reference from text
+                                mask_start = start_idx
+                                mask_end = end_abbreviation_idx
+
+
+                                mask = "*" * (mask_end - mask_start)
+                                text = text[:mask_start] + mask + text[mask_end:]
+
+                                print(tokens, text[start_idx:end_abbreviation_idx].strip(),)
+                                found_stop = True
                                 break
-                        count1+=1
-                        curr = curr.next
-                        i+=1
-            i+=1
 
-        # print(startcount, " - ", datacount, f" document {pdf_file.name}")
+                            k += 1
 
+                        # ако не намерим абревиатура — не режем тихо
+                        if not found_stop:
+                            pass
 
+                        i = k
+                        break
+
+                    curr = curr.next
+                    j += 1
+
+                if matched_any_start:
+                    break
+
+            if not matched_any_start:
+                i += 1
+
+        text += " ".join(tokens)
+
+        print(text)
+
+    return references_count
+
+# ENTRY POINT
 
 if __name__ == "__main__":
-    main()
+    ref_count = main()
+
+    ref_count_per_doc = ref_count/4992
+
+    print("references_count: ", ref_count, " per document: ", ref_count_per_doc )
