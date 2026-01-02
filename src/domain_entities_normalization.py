@@ -191,7 +191,7 @@ def extract_reference_tokens(text, start, end, law):
                 else:
                     pass
 
-    return tokens
+    return ["LEGAL:" + token for token in tokens ]
 
 # ================= MAIN =================
 

@@ -1,2 +1,6 @@
 .idea/
 /src/Data/Documents
+
+/src/index/documents_tokens.json
+/src/index/tfidf_docs.json
+src/index/idf.json

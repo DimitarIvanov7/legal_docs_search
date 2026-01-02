@@ -1,5 +1,4 @@
 from pathlib import Path
-import PyPDF2
 import re
 from domain_entities_normalization import (extract_reference_tokens)
 
@@ -17,7 +16,7 @@ terminalStrings = {
     "т.",
 }
 
-search_window =  35
+search_window =  100
 
 # TRIE STRUCTURES
 
@@ -72,17 +71,6 @@ def is_next_digit(text: str, terminal_index: int) -> bool:
 
 # PDF TEXT EXTRACTION
 
-def extract_text_from_pdf(pdf_path: Path) -> str:
-    chunks = []
-    with open(pdf_path, "rb") as f:
-        reader = PyPDF2.PdfReader(f)
-        for page in reader.pages:
-            text = page.extract_text()
-            if text:
-                chunks.append(text)
-    return "\n".join(chunks)
-
-
 # ABBREVIATION DETECTOR
 # >= 2 главни букви общо, позволени малки само по средата
 # Примери: АПК, ЗУБ, ИЗоБ, ЗЗдр
@@ -90,7 +78,7 @@ def is_abbreviation(text: str, i: int) -> int:
     n = len(text)
 
     # boundary check – да не е в средата на ДУМА (буква)
-    if i > 0 and (text[i - 1].isalpha() or text[i - 1] == "/"):
+    if i > 0 and (text[i - 1].isalpha()):
         return 0
 
     j = i
@@ -164,100 +152,99 @@ def is_any_abbreviation(text: str, i: int) -> int:
 
 # MAIN PARSER
 
-def main():
+def extract_domain_entities(text):
     startTrie = constructTrie(terminalStrings)
 
     references_count = 0
 
-    for pdf_file in PDF_DIR.glob("*.pdf"):
-        print(f"\n--- {pdf_file.name} ---")
+    # print(f"\n--- {pdf_file.name} ---")
 
-        text = extract_text_from_pdf(pdf_file)
+    # text = extract_text_from_pdf(pdf_file)
 
-        text = re.sub(r"\s+", " ", text)
+    text = re.sub(r"\s+", " ", text)
 
-        i = 0
-        n = len(text)
+    i = 0
+    n = len(text)
 
-        tokens = []
+    tokens = []
 
-        while i < n:
-            starts = [x for x in startTrie.children if x.value == text[i].lower()]
-            if not starts:
-                i += 1
-                continue
+    while i < n:
+        starts = [x for x in startTrie.children if x.value == text[i].lower()]
+        if not starts:
+            i += 1
+            continue
 
-            matched_any_start = False
+        matched_any_start = False
 
-            for start in starts:
-                curr = start
-                j = i
+        for start in starts:
+            curr = start
+            j = i
 
-                while curr is not None and j < n and curr.value == text[j].lower() :
-                    if curr.isTerminal and is_next_digit(text,j):
-                        matched_any_start = True
-                        start_idx = i
-                        k = j + 1
-                        found_stop = False
+            while curr is not None and j < n and curr.value == text[j].lower() :
+                if curr.isTerminal and is_next_digit(text,j):
+                    matched_any_start = True
+                    start_idx = i
+                    k = j + 1
+                    found_stop = False
 
-                        while k < n and (k- j) <= search_window:
-                            # boundary защита
-                            if k > 0 and text[k - 1].isalnum():
-                                k += 1
-                                continue
-
-                            end_abbreviation_idx = is_any_abbreviation(text, k)
-                            if end_abbreviation_idx > 0:
-                                references_count+=1
-                                law_reference = text[k:end_abbreviation_idx]
-
-                                tokens.extend(extract_reference_tokens(
-                                    text,
-                                    start_idx,
-                                    k,
-                                    law_reference
-                                ))
-
-                                # remove law reference from text
-                                mask_start = start_idx
-                                mask_end = end_abbreviation_idx
-
-
-                                mask = "*" * (mask_end - mask_start)
-                                text = text[:mask_start] + mask + text[mask_end:]
-
-                                print(tokens, text[start_idx:end_abbreviation_idx].strip(),)
-                                found_stop = True
-                                break
-
+                    while k < n and (k- j) <= search_window:
+                        # boundary защита
+                        if k > 0 and text[k - 1].isalnum():
                             k += 1
+                            continue
 
-                        # ако не намерим абревиатура — не режем тихо
-                        if not found_stop:
-                            pass
+                        end_abbreviation_idx = is_any_abbreviation(text, k)
+                        if end_abbreviation_idx > 0:
+                            references_count+=1
+                            law_reference = text[k:end_abbreviation_idx]
 
-                        i = k
-                        break
+                            tokens.extend(extract_reference_tokens(
+                                text,
+                                start_idx,
+                                k,
+                                law_reference
+                            ))
 
-                    curr = curr.next
-                    j += 1
+                            # remove law reference from text
+                            mask_start = start_idx
+                            mask_end = end_abbreviation_idx
 
-                if matched_any_start:
+                            # print(text[start_idx:end_abbreviation_idx].strip(), tokens)
+
+                            mask = "*" * (mask_end - mask_start)
+                            text = text[:mask_start] + mask + text[mask_end:]
+
+                            found_stop = True
+                            break
+
+                        k += 1
+
+                    # ако не намерим абревиатура — не режем тихо
+                    if not found_stop:
+                        pass
+
+                    i = k
                     break
 
-            if not matched_any_start:
-                i += 1
+                curr = curr.next
+                j += 1
 
-        text += " ".join(tokens)
+            if matched_any_start:
+                break
 
-        print(text)
+        if not matched_any_start:
+            i += 1
 
-    return references_count
+    # text += " ".join(tokens)
+
+    # print(text)
+
+    return [text, tokens]
 
 # ENTRY POINT
 
 if __name__ == "__main__":
-    ref_count = main()
+    ref_count = extract_domain_entities()
 
     ref_count_per_doc = ref_count/4992
 
