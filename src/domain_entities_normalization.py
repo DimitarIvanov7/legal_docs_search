@@ -2,12 +2,45 @@ from pathlib import Path
 import PyPDF2
 import re
 
-# ================= CONFIG =================
-
 PDF_DIR = Path("Data/Documents")
 SEARCH_WINDOW = 60
 
-# ================= PDF TEXT =================
+legal_entities_types = {
+    'LEGAL': "LEGAL",
+    'ARTICLE': "ARTICLE",
+    'SECTION' : "SECTION",
+    'SUBSECTION' : "SUBSECTION",
+}
+
+class LegalEntityHierarchy:
+    def __init__(self, name):
+        self.child = None
+        self.name = name
+
+    def add_child(self, child):
+        self.child = child
+
+    def construct_hierarchy(self):
+        return self.helper(self)[1:]
+
+    def helper(self, child_hierarchy):
+        if child_hierarchy is None:
+            return ""
+
+        return "_" + self.name + self.helper(self.child)
+
+LegalEntity = LegalEntityHierarchy(legal_entities_types["LEGAL"])
+
+ArticleEntity = LegalEntityHierarchy(legal_entities_types["ARTICLE"])
+
+SectionEntity = LegalEntityHierarchy(legal_entities_types["SECTION"])
+
+SubSectionEntity = LegalEntityHierarchy(legal_entities_types["SUBSECTION"])
+
+LegalEntity.add_child(ArticleEntity)
+ArticleEntity.add_child(SectionEntity)
+SectionEntity.add_child(SubSectionEntity)
+
 
 def extract_text_from_pdf(pdf_path: Path) -> str:
     chunks = []
@@ -18,8 +51,6 @@ def extract_text_from_pdf(pdf_path: Path) -> str:
             if t:
                 chunks.append(t)
     return " ".join(chunks)
-
-# ================= LAW ABBREVIATION =================
 
 def is_abbreviation(text: str, i: int) -> int:
     n = len(text)
@@ -42,8 +73,6 @@ def is_abbreviation(text: str, i: int) -> int:
         j += 1
 
     return j if upper >= 2 else 0
-
-# ================= LEVEL DEFINITIONS =================
 
 LEVEL_DEFS = {
     "чл": {"forms": {"чл.", "член", "членове"}},
@@ -90,8 +119,6 @@ def read_number_or_range(text, i, end):
 
     return nums, i
 
-# ================= TOKEN EXTRACTION =================
-
 def extract_reference_tokens(text, start, end, law):
     tokens = set()
     law = law.upper()
@@ -120,16 +147,16 @@ def extract_reference_tokens(text, start, end, law):
         if not nums:
             continue
 
-        # ===== ЧЛЕН =====
+        # член
         if level == "чл":
             current_article_paragraph = None
             standalone_paragraph = None
 
             for a in nums:
                 current_article = a
-                tokens.add(f"чл:{a}_{law}")
+                tokens.add(f"_чл:{a}_{law}")
 
-        # ===== ПАРАГРАФ (§) =====
+        # параграф
         elif level == "§":
             current_section_paragraph = None
             standalone_paragraph = None
@@ -142,7 +169,7 @@ def extract_reference_tokens(text, start, end, law):
                 if current_article is not None:
                     tokens.add(f"чл:{current_article}_§:{s}_{law}")
 
-        # ===== АЛИНЕЯ =====
+        # алинея
         elif level == "ал":
             for p in nums:
                 if current_article is not None:
@@ -161,7 +188,7 @@ def extract_reference_tokens(text, start, end, law):
                     standalone_paragraph = p
                     tokens.add(f"ал:{p}_{law}")
 
-        # ===== ТОЧКА =====
+        # точка
         elif level == "т":
             for t in nums:
                 # т. към чл + ал
@@ -228,7 +255,6 @@ def main():
 
     return all_tokens
 
-# ================= ENTRY =================
-
+# testing
 if __name__ == "__main__":
     main()

@@ -142,6 +142,7 @@ def process_query(query: str) -> list[str]:
     return tokens
 
 
+# testing
 if __name__ == "__main__":
     pdf_path = "./Data/Documents/"
 

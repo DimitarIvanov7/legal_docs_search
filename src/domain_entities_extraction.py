@@ -157,10 +157,6 @@ def extract_domain_entities(text):
 
     references_count = 0
 
-    # print(f"\n--- {pdf_file.name} ---")
-
-    # text = extract_text_from_pdf(pdf_file)
-
     text = re.sub(r"\s+", " ", text)
 
     i = 0
@@ -209,8 +205,6 @@ def extract_domain_entities(text):
                             mask_start = start_idx
                             mask_end = end_abbreviation_idx
 
-                            # print(text[start_idx:end_abbreviation_idx].strip(), tokens)
-
                             mask = "*" * (mask_end - mask_start)
                             text = text[:mask_start] + mask + text[mask_end:]
 
@@ -219,7 +213,6 @@ def extract_domain_entities(text):
 
                         k += 1
 
-                    # ако не намерим абревиатура — не режем тихо
                     if not found_stop:
                         pass
 
@@ -235,14 +228,9 @@ def extract_domain_entities(text):
         if not matched_any_start:
             i += 1
 
-    # text += " ".join(tokens)
-
-    # print(text)
-
     return [text, tokens]
 
-# ENTRY POINT
-
+# testing
 if __name__ == "__main__":
     ref_count = extract_domain_entities()
 
