@@ -12,10 +12,9 @@ from stemmer.bulgarian_stemmer import BulgarianStemmer
 BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "Data"
 
-stemmer = (
-    BulgarianStemmer(r"C:\Projects\PycharmProjects\legal_docs_search\stemmer\stem_rules_context_1.txt"
-)) 
-
+stemmer = BulgarianStemmer(
+    r"C:\Projects\PycharmProjects\legal_docs_search\stemmer\stem_rules_context_1.txt"
+)
 
 SENSITIVE_MARKERS = [
     "еик",
@@ -38,8 +37,6 @@ MARKERS_REGEX = re.compile(
     re.IGNORECASE
 )
 
-LEGAL_BOOST = 5
-
 DATE_REGEX = re.compile(
     r"""
     \b
@@ -53,7 +50,6 @@ DATE_REGEX = re.compile(
     """,
     re.VERBOSE
 )
-
 
 MONEY_REGEX = r"""
 (?:€|\$|лв\.?|лева|bgn)\s*\d{1,3}(?:[ .]\d{3})*(?:[,.]\d+)?
@@ -71,6 +67,7 @@ def remove_text_before_marker_safe(text: str, marker: str = "следното:")
         return text
     return text[idx + len(marker):].strip()
 
+
 def load_json(path: str):
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
@@ -84,6 +81,7 @@ def normalize_text(text: str) -> str:
 def remove_dates(text: str) -> str:
     return DATE_REGEX.sub(" ", text)
 
+
 def remove_sensitive_markers(text: str) -> str:
     return MARKERS_REGEX.sub(" ", text)
 
@@ -94,8 +92,10 @@ TOKEN_REGEX = re.compile(
     re.IGNORECASE | re.VERBOSE
 )
 
+
 def tokenize(text: str) -> list[str]:
     return [t.strip() for t in TOKEN_REGEX.findall(text)]
+
 
 def preprocess(text: str) -> list[str]:
     text = normalize_text(text)
@@ -116,42 +116,45 @@ def preprocess(text: str) -> list[str]:
     return cleaned
 
 
-def process_pdf(pdf_file: Path) -> list[str]:
+def _finalize_text_tokens(text: str) -> list[str]:
+    tokens = preprocess(text)
+    tokens = [t for t in tokens if len(t) > 2 and not t.isdigit()]
+    tokens = [stemmer(t) for t in tokens]
+    return tokens
+
+
+def process_pdf(pdf_file: Path) -> tuple[list[str], list[str]]:
+    """
+    Returns: (text_tokens, legal_tokens)
+    """
     raw_text = extract_text_from_pdf(pdf_file)
     trimmed_text = remove_text_before_marker_safe(raw_text)
 
     text, legal_tokens = extract_domain_entities(trimmed_text)
 
-    tokens = preprocess(text)
-    tokens = [t for t in tokens if len(t) > 2 and not t.isdigit()]
-    tokens = [stemmer(t) for t in tokens]
+    text_tokens = _finalize_text_tokens(text)
 
-    tokens.extend(legal_tokens * LEGAL_BOOST)
-    return tokens
+    return text_tokens, legal_tokens
 
-def process_query(query: str) -> list[str]:
+
+def process_query(query: str) -> tuple[list[str], list[str]]:
+    """
+    Returns: (text_tokens, legal_tokens)
+    """
     trimmed_text = remove_text_before_marker_safe(query)
 
     text, legal_tokens = extract_domain_entities(trimmed_text)
 
-    tokens = preprocess(text)
-    tokens = [t for t in tokens if len(t) > 2 and not t.isdigit()]
-    tokens = [stemmer(t) for t in tokens]
-
-    tokens.extend(legal_tokens * LEGAL_BOOST)
-    return tokens
+    text_tokens = _finalize_text_tokens(text)
+    return text_tokens, legal_tokens
 
 
 # testing
 if __name__ == "__main__":
-    pdf_path = "./Data/Documents/"
-
     PDF_DIR = Path("Data/Documents")
 
     for pdf_file in PDF_DIR.glob("*.pdf"):
-        tokens = process_pdf(pdf_file)
-
-        print(f"Total tokens: {len(tokens)}")
+        text_tokens, legal_tokens = process_pdf(pdf_file)
         print(pdf_file.name)
-        print(f"{tokens}\n ")
-
+        print(f"text_tokens: {len(text_tokens)} | legal_tokens: {len(legal_tokens)}")
+        print()

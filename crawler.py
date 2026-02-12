@@ -10,9 +10,9 @@ import time
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
-BASE_URL = "https://search-sofia-adms-g.justice.bg/Acts/Actsindex"
-PAGES_TO_CRAWL = 3
-DOWNLOAD_DIR = "Data/Documents"
+BASE_URL = "https://search-sofia-adms-g.justice.bg/Acts/ActsIndex?page=200"
+PAGES_TO_CRAWL = 5
+DOWNLOAD_DIR = "Data/Documents_Eval"
 CHROMEDRIVER_PATH = (
     r"C:\Users\dimit\Downloads\chromedriver-win64\chromedriver-win64\chromedriver.exe"
 )

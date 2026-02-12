@@ -1,0 +1,2258 @@
+{
+  "summary": {
+    "count": 250,
+    "mean": 0.7760747257814685
+  },
+  "rows": [
+    {
+      "query_doc": "Act_Content_0.pdf",
+      "best_match_doc": "Act_Content_280.pdf",
+      "best_tfidf_score": 0.4748232292925994,
+      "best_jaccard": 0.0,
+      "best_weighted_jaccard": 0.0,
+      "query_legal_count": 3,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_1.pdf",
+      "best_match_doc": "Act_Content_574.pdf",
+      "best_tfidf_score": 0.48709636386508615,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_10.pdf",
+      "best_match_doc": "Act_Content_2349.pdf",
+      "best_tfidf_score": 0.3153910417827748,
+      "best_jaccard": 0.14285714285714285,
+      "best_weighted_jaccard": 0.11374287518898686,
+      "query_legal_count": 3,
+      "best_match_legal_count": 5
+    },
+    {
+      "query_doc": "Act_Content_100.pdf",
+      "best_match_doc": "Act_Content_2874.pdf",
+      "best_tfidf_score": 0.3226840300041541,
+      "best_jaccard": 0.5,
+      "best_weighted_jaccard": 0.37519183391654765,
+      "query_legal_count": 2,
+      "best_match_legal_count": 4
+    },
+    {
+      "query_doc": "Act_Content_101.pdf",
+      "best_match_doc": "Act_Content_114.pdf",
+      "best_tfidf_score": 0.19199291362619791,
+      "best_jaccard": 0.2222222222222222,
+      "best_weighted_jaccard": 0.182206475451149,
+      "query_legal_count": 7,
+      "best_match_legal_count": 4
+    },
+    {
+      "query_doc": "Act_Content_102.pdf",
+      "best_match_doc": "Act_Content_2317.pdf",
+      "best_tfidf_score": 0.5172237896363882,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_103.pdf",
+      "best_match_doc": "Act_Content_4695.pdf",
+      "best_tfidf_score": 0.6078070933560015,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_104.pdf",
+      "best_match_doc": "Act_Content_114.pdf",
+      "best_tfidf_score": 0.19144295023532926,
+      "best_jaccard": 0.2222222222222222,
+      "best_weighted_jaccard": 0.182206475451149,
+      "query_legal_count": 7,
+      "best_match_legal_count": 4
+    },
+    {
+      "query_doc": "Act_Content_105.pdf",
+      "best_match_doc": "Act_Content_4768.pdf",
+      "best_tfidf_score": 0.39393067431839773,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_106.pdf",
+      "best_match_doc": "Act_Content_2039.pdf",
+      "best_tfidf_score": 0.5293600781068267,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_107.pdf",
+      "best_match_doc": "Act_Content_3097.pdf",
+      "best_tfidf_score": 0.1861754865592019,
+      "best_jaccard": 0.0,
+      "best_weighted_jaccard": 0.0,
+      "query_legal_count": 1,
+      "best_match_legal_count": 6
+    },
+    {
+      "query_doc": "Act_Content_108.pdf",
+      "best_match_doc": "Act_Content_174.pdf",
+      "best_tfidf_score": 0.6310680150922419,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 3,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_109.pdf",
+      "best_match_doc": "Act_Content_1554.pdf",
+      "best_tfidf_score": 0.2464827180941837,
+      "best_jaccard": 0.16666666666666666,
+      "best_weighted_jaccard": 0.09115925428180727,
+      "query_legal_count": 4,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_11.pdf",
+      "best_match_doc": "Act_Content_3319.pdf",
+      "best_tfidf_score": 0.6414001971542705,
+      "best_jaccard": 0.0,
+      "best_weighted_jaccard": 0.0,
+      "query_legal_count": 6,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_110.pdf",
+      "best_match_doc": "Act_Content_4695.pdf",
+      "best_tfidf_score": 0.36624887887523316,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_111.pdf",
+      "best_match_doc": "Act_Content_3876.pdf",
+      "best_tfidf_score": 0.5092083787618866,
+      "best_jaccard": 0.0,
+      "best_weighted_jaccard": 0.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_112.pdf",
+      "best_match_doc": "Act_Content_1728.pdf",
+      "best_tfidf_score": 0.5502452745948405,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_113.pdf",
+      "best_match_doc": "Act_Content_982.pdf",
+      "best_tfidf_score": 0.5349502055266606,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_114.pdf",
+      "best_match_doc": "Act_Content_3160.pdf",
+      "best_tfidf_score": 0.34759143661484776,
+      "best_jaccard": 0.0,
+      "best_weighted_jaccard": 0.0,
+      "query_legal_count": 4,
+      "best_match_legal_count": 6
+    },
+    {
+      "query_doc": "Act_Content_115.pdf",
+      "best_match_doc": "Act_Content_2858.pdf",
+      "best_tfidf_score": 0.595395385521646,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_116.pdf",
+      "best_match_doc": "Act_Content_1043.pdf",
+      "best_tfidf_score": 0.6506985307001864,
+      "best_jaccard": 0.0,
+      "best_weighted_jaccard": 0.0,
+      "query_legal_count": 1,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_117.pdf",
+      "best_match_doc": "Act_Content_1632.pdf",
+      "best_tfidf_score": 0.7849167085072218,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_118.pdf",
+      "best_match_doc": "Act_Content_1632.pdf",
+      "best_tfidf_score": 0.7855983482808002,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_119.pdf",
+      "best_match_doc": "Act_Content_1539.pdf",
+      "best_tfidf_score": 0.3028829622802503,
+      "best_jaccard": 0.4,
+      "best_weighted_jaccard": 0.35981038997142667,
+      "query_legal_count": 2,
+      "best_match_legal_count": 5
+    },
+    {
+      "query_doc": "Act_Content_12.pdf",
+      "best_match_doc": "Act_Content_3319.pdf",
+      "best_tfidf_score": 0.5726881839195233,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_120.pdf",
+      "best_match_doc": "Act_Content_1781.pdf",
+      "best_tfidf_score": 0.1989336694414837,
+      "best_jaccard": 0.2,
+      "best_weighted_jaccard": 0.11650233513434372,
+      "query_legal_count": 3,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_121.pdf",
+      "best_match_doc": "Act_Content_1341.pdf",
+      "best_tfidf_score": 0.36353958974119144,
+      "best_jaccard": 0.6666666666666666,
+      "best_weighted_jaccard": 0.5620372219964136,
+      "query_legal_count": 3,
+      "best_match_legal_count": 2
+    },
+    {
+      "query_doc": "Act_Content_122.pdf",
+      "best_match_doc": "Act_Content_4594.pdf",
+      "best_tfidf_score": 0.46084471951426464,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_123.pdf",
+      "best_match_doc": "Act_Content_1832.pdf",
+      "best_tfidf_score": 0.24127917644261848,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_124.pdf",
+      "best_match_doc": "Act_Content_1372.pdf",
+      "best_tfidf_score": 0.3405809813893967,
+      "best_jaccard": 0.8181818181818182,
+      "best_weighted_jaccard": 0.8189194324324002,
+      "query_legal_count": 11,
+      "best_match_legal_count": 9
+    },
+    {
+      "query_doc": "Act_Content_125.pdf",
+      "best_match_doc": "Act_Content_3885.pdf",
+      "best_tfidf_score": 0.524298715395021,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_126.pdf",
+      "best_match_doc": "Act_Content_4534.pdf",
+      "best_tfidf_score": 0.3952426301766119,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_127.pdf",
+      "best_match_doc": "Act_Content_182.pdf",
+      "best_tfidf_score": 0.29664649815542254,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_128.pdf",
+      "best_match_doc": "Act_Content_4057.pdf",
+      "best_tfidf_score": 0.2104946437709579,
+      "best_jaccard": 0.75,
+      "best_weighted_jaccard": 0.7389095522885751,
+      "query_legal_count": 3,
+      "best_match_legal_count": 4
+    },
+    {
+      "query_doc": "Act_Content_129.pdf",
+      "best_match_doc": "Act_Content_1842.pdf",
+      "best_tfidf_score": 0.12927839767695629,
+      "best_jaccard": 0.5,
+      "best_weighted_jaccard": 0.39085658585455524,
+      "query_legal_count": 3,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_13.pdf",
+      "best_match_doc": "Act_Content_427.pdf",
+      "best_tfidf_score": 0.6094794882427291,
+      "best_jaccard": 0.75,
+      "best_weighted_jaccard": 0.6954282929272776,
+      "query_legal_count": 4,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_130.pdf",
+      "best_match_doc": "Act_Content_3577.pdf",
+      "best_tfidf_score": 0.2633517973182136,
+      "best_jaccard": 0.1,
+      "best_weighted_jaccard": 0.06223385075956753,
+      "query_legal_count": 9,
+      "best_match_legal_count": 2
+    },
+    {
+      "query_doc": "Act_Content_131.pdf",
+      "best_match_doc": "Act_Content_3032.pdf",
+      "best_tfidf_score": 0.43749530133417347,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_132.pdf",
+      "best_match_doc": "Act_Content_3571.pdf",
+      "best_tfidf_score": 0.4424842608391878,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_133.pdf",
+      "best_match_doc": "Act_Content_4312.pdf",
+      "best_tfidf_score": 0.8372917921184025,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 3,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_134.pdf",
+      "best_match_doc": "Act_Content_2729.pdf",
+      "best_tfidf_score": 0.4096055353943783,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_135.pdf",
+      "best_match_doc": "Act_Content_836.pdf",
+      "best_tfidf_score": 0.6760594529352508,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_136.pdf",
+      "best_match_doc": "Act_Content_4115.pdf",
+      "best_tfidf_score": 0.17180467460711102,
+      "best_jaccard": 0.5714285714285714,
+      "best_weighted_jaccard": 0.5136056533110704,
+      "query_legal_count": 6,
+      "best_match_legal_count": 5
+    },
+    {
+      "query_doc": "Act_Content_137.pdf",
+      "best_match_doc": "Act_Content_3151.pdf",
+      "best_tfidf_score": 0.24372564096035976,
+      "best_jaccard": 0.5,
+      "best_weighted_jaccard": 0.5,
+      "query_legal_count": 6,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_138.pdf",
+      "best_match_doc": "Act_Content_4786.pdf",
+      "best_tfidf_score": 0.37323341442653063,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_139.pdf",
+      "best_match_doc": "Act_Content_4823.pdf",
+      "best_tfidf_score": 0.339560514222529,
+      "best_jaccard": 0.14285714285714285,
+      "best_weighted_jaccard": 0.0886786918620993,
+      "query_legal_count": 6,
+      "best_match_legal_count": 2
+    },
+    {
+      "query_doc": "Act_Content_14.pdf",
+      "best_match_doc": "Act_Content_2855.pdf",
+      "best_tfidf_score": 0.4819137199768817,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_140.pdf",
+      "best_match_doc": "Act_Content_1045.pdf",
+      "best_tfidf_score": 0.43711394312393304,
+      "best_jaccard": 0.5,
+      "best_weighted_jaccard": 0.39085658585455524,
+      "query_legal_count": 3,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_141.pdf",
+      "best_match_doc": "Act_Content_3150.pdf",
+      "best_tfidf_score": 0.3321314829041591,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 6,
+      "best_match_legal_count": 6
+    },
+    {
+      "query_doc": "Act_Content_142.pdf",
+      "best_match_doc": "Act_Content_2439.pdf",
+      "best_tfidf_score": 0.34845738499494616,
+      "best_jaccard": 0.6666666666666666,
+      "best_weighted_jaccard": 0.5620372219964136,
+      "query_legal_count": 3,
+      "best_match_legal_count": 2
+    },
+    {
+      "query_doc": "Act_Content_143.pdf",
+      "best_match_doc": "Act_Content_3750.pdf",
+      "best_tfidf_score": 0.2782364945943443,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_144.pdf",
+      "best_match_doc": "Act_Content_4583.pdf",
+      "best_tfidf_score": 0.6212215184293794,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_145.pdf",
+      "best_match_doc": "Act_Content_4711.pdf",
+      "best_tfidf_score": 0.569293146542545,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_146.pdf",
+      "best_match_doc": "Act_Content_3489.pdf",
+      "best_tfidf_score": 0.2117862625278881,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_147.pdf",
+      "best_match_doc": "Act_Content_4108.pdf",
+      "best_tfidf_score": 0.4684665147740157,
+      "best_jaccard": 0.0,
+      "best_weighted_jaccard": 0.0,
+      "query_legal_count": 5,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_148.pdf",
+      "best_match_doc": "Act_Content_3796.pdf",
+      "best_tfidf_score": 0.31432611392349213,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_149.pdf",
+      "best_match_doc": "Act_Content_4327.pdf",
+      "best_tfidf_score": 0.5369689512069332,
+      "best_jaccard": 0.0,
+      "best_weighted_jaccard": 0.0,
+      "query_legal_count": 7,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_15.pdf",
+      "best_match_doc": "Act_Content_3608.pdf",
+      "best_tfidf_score": 0.23981985164267797,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 2,
+      "best_match_legal_count": 2
+    },
+    {
+      "query_doc": "Act_Content_150.pdf",
+      "best_match_doc": "Act_Content_617.pdf",
+      "best_tfidf_score": 0.5216222882752888,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 3,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_151.pdf",
+      "best_match_doc": "Act_Content_536.pdf",
+      "best_tfidf_score": 0.35712086651723035,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_152.pdf",
+      "best_match_doc": "Act_Content_3484.pdf",
+      "best_tfidf_score": 0.48459711137447187,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_153.pdf",
+      "best_match_doc": "Act_Content_4655.pdf",
+      "best_tfidf_score": 0.5845654340481682,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 3,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_154.pdf",
+      "best_match_doc": "Act_Content_4568.pdf",
+      "best_tfidf_score": 0.3452453754467861,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_155.pdf",
+      "best_match_doc": "Act_Content_3885.pdf",
+      "best_tfidf_score": 0.2574509221241298,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_156.pdf",
+      "best_match_doc": "Act_Content_1624.pdf",
+      "best_tfidf_score": 0.2176727334849306,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_157.pdf",
+      "best_match_doc": "Act_Content_3880.pdf",
+      "best_tfidf_score": 0.1885899471797771,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_158.pdf",
+      "best_match_doc": "Act_Content_1811.pdf",
+      "best_tfidf_score": 0.3232066465512065,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_159.pdf",
+      "best_match_doc": "Act_Content_2575.pdf",
+      "best_tfidf_score": 0.21685683793168326,
+      "best_jaccard": 0.5,
+      "best_weighted_jaccard": 0.5,
+      "query_legal_count": 6,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_16.pdf",
+      "best_match_doc": "Act_Content_2629.pdf",
+      "best_tfidf_score": 0.345273152384022,
+      "best_jaccard": 0.375,
+      "best_weighted_jaccard": 0.3582549329571461,
+      "query_legal_count": 8,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_160.pdf",
+      "best_match_doc": "Act_Content_4909.pdf",
+      "best_tfidf_score": 0.25674153600791344,
+      "best_jaccard": 0.16666666666666666,
+      "best_weighted_jaccard": 0.14671668037372182,
+      "query_legal_count": 8,
+      "best_match_legal_count": 6
+    },
+    {
+      "query_doc": "Act_Content_161.pdf",
+      "best_match_doc": "Act_Content_3151.pdf",
+      "best_tfidf_score": 0.5954336913235004,
+      "best_jaccard": 0.2,
+      "best_weighted_jaccard": 0.11650233513434372,
+      "query_legal_count": 3,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_162.pdf",
+      "best_match_doc": "Act_Content_4991.pdf",
+      "best_tfidf_score": 0.666735636528175,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_163.pdf",
+      "best_match_doc": "Act_Content_3570.pdf",
+      "best_tfidf_score": 0.3177590121970593,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_164.pdf",
+      "best_match_doc": "Act_Content_1047.pdf",
+      "best_tfidf_score": 0.5142556580622893,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_165.pdf",
+      "best_match_doc": "Act_Content_4813.pdf",
+      "best_tfidf_score": 0.26499787585943135,
+      "best_jaccard": 0.0,
+      "best_weighted_jaccard": 0.0,
+      "query_legal_count": 3,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_166.pdf",
+      "best_match_doc": "Act_Content_3636.pdf",
+      "best_tfidf_score": 0.5868967465390731,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_167.pdf",
+      "best_match_doc": "Act_Content_1797.pdf",
+      "best_tfidf_score": 0.2708527570042246,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_168.pdf",
+      "best_match_doc": "Act_Content_3901.pdf",
+      "best_tfidf_score": 0.09188146509363704,
+      "best_jaccard": 0.6666666666666666,
+      "best_weighted_jaccard": 0.7292282297158862,
+      "query_legal_count": 3,
+      "best_match_legal_count": 2
+    },
+    {
+      "query_doc": "Act_Content_169.pdf",
+      "best_match_doc": "Act_Content_3454.pdf",
+      "best_tfidf_score": 0.4408693228401793,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_17.pdf",
+      "best_match_doc": "Act_Content_2384.pdf",
+      "best_tfidf_score": 0.40827679487183666,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_170.pdf",
+      "best_match_doc": "Act_Content_1330.pdf",
+      "best_tfidf_score": 0.33473476060239715,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_171.pdf",
+      "best_match_doc": "Act_Content_3439.pdf",
+      "best_tfidf_score": 0.44710729350485867,
+      "best_jaccard": 0.0,
+      "best_weighted_jaccard": 0.0,
+      "query_legal_count": 6,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_172.pdf",
+      "best_match_doc": "Act_Content_1990.pdf",
+      "best_tfidf_score": 0.5402491483455159,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 2,
+      "best_match_legal_count": 2
+    },
+    {
+      "query_doc": "Act_Content_173.pdf",
+      "best_match_doc": "Act_Content_3295.pdf",
+      "best_tfidf_score": 0.415742716596423,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_174.pdf",
+      "best_match_doc": "Act_Content_3154.pdf",
+      "best_tfidf_score": 0.3496151520739813,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_175.pdf",
+      "best_match_doc": "Act_Content_2852.pdf",
+      "best_tfidf_score": 0.23712140253743597,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_176.pdf",
+      "best_match_doc": "Act_Content_3287.pdf",
+      "best_tfidf_score": 0.07061652581015418,
+      "best_jaccard": 0.16666666666666666,
+      "best_weighted_jaccard": 0.09730782224690447,
+      "query_legal_count": 4,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_177.pdf",
+      "best_match_doc": "Act_Content_1032.pdf",
+      "best_tfidf_score": 0.5923977993797542,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_178.pdf",
+      "best_match_doc": "Act_Content_2132.pdf",
+      "best_tfidf_score": 0.5348969980341078,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_179.pdf",
+      "best_match_doc": "Act_Content_86.pdf",
+      "best_tfidf_score": 0.789777016084201,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_18.pdf",
+      "best_match_doc": "Act_Content_4963.pdf",
+      "best_tfidf_score": 0.961221735883993,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 3,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_180.pdf",
+      "best_match_doc": "Act_Content_4028.pdf",
+      "best_tfidf_score": 0.5560532045199552,
+      "best_jaccard": 0.6,
+      "best_weighted_jaccard": 0.705525496145505,
+      "query_legal_count": 5,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_181.pdf",
+      "best_match_doc": "Act_Content_2384.pdf",
+      "best_tfidf_score": 0.45624978810780475,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_182.pdf",
+      "best_match_doc": "Act_Content_619.pdf",
+      "best_tfidf_score": 0.5613744886026364,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_183.pdf",
+      "best_match_doc": "Act_Content_2700.pdf",
+      "best_tfidf_score": 0.6994849937819404,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_184.pdf",
+      "best_match_doc": "Act_Content_4552.pdf",
+      "best_tfidf_score": 0.4953714049482887,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_185.pdf",
+      "best_match_doc": "Act_Content_3141.pdf",
+      "best_tfidf_score": 0.2561341582702942,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_186.pdf",
+      "best_match_doc": "Act_Content_2371.pdf",
+      "best_tfidf_score": 0.4683169352733422,
+      "best_jaccard": 0.7142857142857143,
+      "best_weighted_jaccard": 0.7170971445945743,
+      "query_legal_count": 6,
+      "best_match_legal_count": 6
+    },
+    {
+      "query_doc": "Act_Content_187.pdf",
+      "best_match_doc": "Act_Content_1354.pdf",
+      "best_tfidf_score": 0.6020180423477743,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_188.pdf",
+      "best_match_doc": "Act_Content_2700.pdf",
+      "best_tfidf_score": 0.6247365513634463,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_189.pdf",
+      "best_match_doc": "Act_Content_1632.pdf",
+      "best_tfidf_score": 0.7024710896505711,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_19.pdf",
+      "best_match_doc": "Act_Content_4693.pdf",
+      "best_tfidf_score": 0.9548518085112697,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 3,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_190.pdf",
+      "best_match_doc": "Act_Content_186.pdf",
+      "best_tfidf_score": 0.32588106241430165,
+      "best_jaccard": 0.6,
+      "best_weighted_jaccard": 0.6401896100285733,
+      "query_legal_count": 5,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_191.pdf",
+      "best_match_doc": "Act_Content_4566.pdf",
+      "best_tfidf_score": 0.7201626991738539,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 9,
+      "best_match_legal_count": 9
+    },
+    {
+      "query_doc": "Act_Content_192.pdf",
+      "best_match_doc": "Act_Content_975.pdf",
+      "best_tfidf_score": 0.4825923106572839,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 6,
+      "best_match_legal_count": 6
+    },
+    {
+      "query_doc": "Act_Content_193.pdf",
+      "best_match_doc": "Act_Content_1775.pdf",
+      "best_tfidf_score": 0.24954515663543309,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_194.pdf",
+      "best_match_doc": "Act_Content_3503.pdf",
+      "best_tfidf_score": 0.32391666379029155,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_195.pdf",
+      "best_match_doc": "Act_Content_2133.pdf",
+      "best_tfidf_score": 0.5352995535662394,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_196.pdf",
+      "best_match_doc": "Act_Content_400.pdf",
+      "best_tfidf_score": 0.2088883260272968,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_197.pdf",
+      "best_match_doc": "Act_Content_3497.pdf",
+      "best_tfidf_score": 0.8152920262936562,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 3,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_198.pdf",
+      "best_match_doc": "Act_Content_4675.pdf",
+      "best_tfidf_score": 0.35915308677584556,
+      "best_jaccard": 0.5294117647058824,
+      "best_weighted_jaccard": 0.5065359152932875,
+      "query_legal_count": 12,
+      "best_match_legal_count": 14
+    },
+    {
+      "query_doc": "Act_Content_199.pdf",
+      "best_match_doc": "Act_Content_1341.pdf",
+      "best_tfidf_score": 0.325780421261903,
+      "best_jaccard": 0.5,
+      "best_weighted_jaccard": 0.46499637888430767,
+      "query_legal_count": 4,
+      "best_match_legal_count": 2
+    },
+    {
+      "query_doc": "Act_Content_2.pdf",
+      "best_match_doc": "Act_Content_286.pdf",
+      "best_tfidf_score": 0.37425066802339113,
+      "best_jaccard": 0.0,
+      "best_weighted_jaccard": 0.0,
+      "query_legal_count": 3,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_20.pdf",
+      "best_match_doc": "Act_Content_3790.pdf",
+      "best_tfidf_score": 0.3751874542430969,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_200.pdf",
+      "best_match_doc": "Act_Content_3768.pdf",
+      "best_tfidf_score": 0.3409120727446593,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 3,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_201.pdf",
+      "best_match_doc": "Act_Content_2851.pdf",
+      "best_tfidf_score": 0.34720852226300003,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_202.pdf",
+      "best_match_doc": "Act_Content_3564.pdf",
+      "best_tfidf_score": 0.32006279334890675,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 3,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_203.pdf",
+      "best_match_doc": "Act_Content_3773.pdf",
+      "best_tfidf_score": 0.5500073605117703,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_204.pdf",
+      "best_match_doc": "Act_Content_4042.pdf",
+      "best_tfidf_score": 0.39687361115545383,
+      "best_jaccard": 0.0,
+      "best_weighted_jaccard": 0.0,
+      "query_legal_count": 4,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_205.pdf",
+      "best_match_doc": "Act_Content_2346.pdf",
+      "best_tfidf_score": 0.4939582517222796,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 4,
+      "best_match_legal_count": 4
+    },
+    {
+      "query_doc": "Act_Content_206.pdf",
+      "best_match_doc": "Act_Content_1676.pdf",
+      "best_tfidf_score": 0.25033644837604296,
+      "best_jaccard": 0.25,
+      "best_weighted_jaccard": 0.1542042243634596,
+      "query_legal_count": 2,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_207.pdf",
+      "best_match_doc": "Act_Content_2479.pdf",
+      "best_tfidf_score": 0.6994450980308587,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_208.pdf",
+      "best_match_doc": "Act_Content_139.pdf",
+      "best_tfidf_score": 0.44542345947641737,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_209.pdf",
+      "best_match_doc": "Act_Content_4402.pdf",
+      "best_tfidf_score": 0.1652879144127578,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_21.pdf",
+      "best_match_doc": "Act_Content_1699.pdf",
+      "best_tfidf_score": 0.6947361153258375,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_210.pdf",
+      "best_match_doc": "Act_Content_2916.pdf",
+      "best_tfidf_score": 0.249111151834984,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_211.pdf",
+      "best_match_doc": "Act_Content_941.pdf",
+      "best_tfidf_score": 0.47194593384279054,
+      "best_jaccard": 0.25,
+      "best_weighted_jaccard": 0.1542042243634596,
+      "query_legal_count": 2,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_212.pdf",
+      "best_match_doc": "Act_Content_1846.pdf",
+      "best_tfidf_score": 0.4592844249151196,
+      "best_jaccard": 0.75,
+      "best_weighted_jaccard": 0.8273408960933104,
+      "query_legal_count": 4,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_213.pdf",
+      "best_match_doc": "Act_Content_844.pdf",
+      "best_tfidf_score": 0.43881783250662754,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_214.pdf",
+      "best_match_doc": "Act_Content_717.pdf",
+      "best_tfidf_score": 0.5562998317783108,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_215.pdf",
+      "best_match_doc": "Act_Content_1354.pdf",
+      "best_tfidf_score": 0.5468510105987858,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_216.pdf",
+      "best_match_doc": "Act_Content_4641.pdf",
+      "best_tfidf_score": 0.3433055961301451,
+      "best_jaccard": 0.125,
+      "best_weighted_jaccard": 0.07476479887143843,
+      "query_legal_count": 6,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_217.pdf",
+      "best_match_doc": "Act_Content_3168.pdf",
+      "best_tfidf_score": 0.4644050598657716,
+      "best_jaccard": 0.0,
+      "best_weighted_jaccard": 0.0,
+      "query_legal_count": 1,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_218.pdf",
+      "best_match_doc": "Act_Content_1742.pdf",
+      "best_tfidf_score": 0.5069970453024129,
+      "best_jaccard": 0.4,
+      "best_weighted_jaccard": 0.35981038997142667,
+      "query_legal_count": 5,
+      "best_match_legal_count": 2
+    },
+    {
+      "query_doc": "Act_Content_219.pdf",
+      "best_match_doc": "Act_Content_1277.pdf",
+      "best_tfidf_score": 0.4275259231764648,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 3,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_22.pdf",
+      "best_match_doc": "Act_Content_2943.pdf",
+      "best_tfidf_score": 0.723640469413866,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_220.pdf",
+      "best_match_doc": "Act_Content_1051.pdf",
+      "best_tfidf_score": 0.3690481234727303,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_221.pdf",
+      "best_match_doc": "Act_Content_1273.pdf",
+      "best_tfidf_score": 0.6601251724171245,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_222.pdf",
+      "best_match_doc": "Act_Content_2300.pdf",
+      "best_tfidf_score": 0.5829319603521728,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 2,
+      "best_match_legal_count": 2
+    },
+    {
+      "query_doc": "Act_Content_223.pdf",
+      "best_match_doc": "Act_Content_3571.pdf",
+      "best_tfidf_score": 0.32199366558058534,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_224.pdf",
+      "best_match_doc": "Act_Content_4309.pdf",
+      "best_tfidf_score": 0.3013052405034568,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_225.pdf",
+      "best_match_doc": "Act_Content_3581.pdf",
+      "best_tfidf_score": 0.5201570805305755,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_226.pdf",
+      "best_match_doc": "Act_Content_852.pdf",
+      "best_tfidf_score": 0.4074040053276539,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_227.pdf",
+      "best_match_doc": "Act_Content_3333.pdf",
+      "best_tfidf_score": 0.42510809869558874,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_228.pdf",
+      "best_match_doc": "Act_Content_3811.pdf",
+      "best_tfidf_score": 0.5972613905245279,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 2,
+      "best_match_legal_count": 2
+    },
+    {
+      "query_doc": "Act_Content_229.pdf",
+      "best_match_doc": "Act_Content_4309.pdf",
+      "best_tfidf_score": 0.4650071668053275,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_23.pdf",
+      "best_match_doc": "Act_Content_3982.pdf",
+      "best_tfidf_score": 0.5421851880737845,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_230.pdf",
+      "best_match_doc": "Act_Content_2212.pdf",
+      "best_tfidf_score": 0.3325220330466673,
+      "best_jaccard": 0.5,
+      "best_weighted_jaccard": 0.5151572586285464,
+      "query_legal_count": 7,
+      "best_match_legal_count": 5
+    },
+    {
+      "query_doc": "Act_Content_231.pdf",
+      "best_match_doc": "Act_Content_2645.pdf",
+      "best_tfidf_score": 0.21934493162469576,
+      "best_jaccard": 0.5,
+      "best_weighted_jaccard": 0.4368132199126182,
+      "query_legal_count": 3,
+      "best_match_legal_count": 6
+    },
+    {
+      "query_doc": "Act_Content_232.pdf",
+      "best_match_doc": "Act_Content_1899.pdf",
+      "best_tfidf_score": 0.5234637603404191,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_233.pdf",
+      "best_match_doc": "Act_Content_4568.pdf",
+      "best_tfidf_score": 0.3690013338725585,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_234.pdf",
+      "best_match_doc": "Act_Content_2089.pdf",
+      "best_tfidf_score": 0.41440744805678736,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 3,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_235.pdf",
+      "best_match_doc": "Act_Content_1950.pdf",
+      "best_tfidf_score": 0.24897648089287303,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_236.pdf",
+      "best_match_doc": "Act_Content_2729.pdf",
+      "best_tfidf_score": 0.5443404196965146,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_237.pdf",
+      "best_match_doc": "Act_Content_2179.pdf",
+      "best_tfidf_score": 0.40410244560845454,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_238.pdf",
+      "best_match_doc": "Act_Content_220.pdf",
+      "best_tfidf_score": 0.6381169153229587,
+      "best_jaccard": 0.5,
+      "best_weighted_jaccard": 0.5193250717443018,
+      "query_legal_count": 16,
+      "best_match_legal_count": 8
+    },
+    {
+      "query_doc": "Act_Content_239.pdf",
+      "best_match_doc": "Act_Content_767.pdf",
+      "best_tfidf_score": 0.6313495269242708,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 2,
+      "best_match_legal_count": 2
+    },
+    {
+      "query_doc": "Act_Content_24.pdf",
+      "best_match_doc": "Act_Content_3187.pdf",
+      "best_tfidf_score": 0.3949830672795005,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_240.pdf",
+      "best_match_doc": "Act_Content_660.pdf",
+      "best_tfidf_score": 0.20803794653058896,
+      "best_jaccard": 0.5555555555555556,
+      "best_weighted_jaccard": 0.53579145900362,
+      "query_legal_count": 9,
+      "best_match_legal_count": 5
+    },
+    {
+      "query_doc": "Act_Content_241.pdf",
+      "best_match_doc": "Act_Content_2612.pdf",
+      "best_tfidf_score": 0.324861008365277,
+      "best_jaccard": 0.0,
+      "best_weighted_jaccard": 0.0,
+      "query_legal_count": 5,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_242.pdf",
+      "best_match_doc": "Act_Content_3785.pdf",
+      "best_tfidf_score": 0.4714940189063062,
+      "best_jaccard": 0.7,
+      "best_weighted_jaccard": 0.647493189698483,
+      "query_legal_count": 8,
+      "best_match_legal_count": 9
+    },
+    {
+      "query_doc": "Act_Content_243.pdf",
+      "best_match_doc": "Act_Content_2925.pdf",
+      "best_tfidf_score": 0.49080615033414854,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_244.pdf",
+      "best_match_doc": "Act_Content_1253.pdf",
+      "best_tfidf_score": 0.5200157936410952,
+      "best_jaccard": 0.2857142857142857,
+      "best_weighted_jaccard": 0.2646033539859828,
+      "query_legal_count": 7,
+      "best_match_legal_count": 2
+    },
+    {
+      "query_doc": "Act_Content_245.pdf",
+      "best_match_doc": "Act_Content_4331.pdf",
+      "best_tfidf_score": 0.4261607805613575,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 3,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_246.pdf",
+      "best_match_doc": "Act_Content_1676.pdf",
+      "best_tfidf_score": 0.3233459900221426,
+      "best_jaccard": 0.25,
+      "best_weighted_jaccard": 0.1542042243634596,
+      "query_legal_count": 2,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_247.pdf",
+      "best_match_doc": "Act_Content_941.pdf",
+      "best_tfidf_score": 0.3442431918909923,
+      "best_jaccard": 0.42857142857142855,
+      "best_weighted_jaccard": 0.3872041752412385,
+      "query_legal_count": 7,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_248.pdf",
+      "best_match_doc": "Act_Content_1154.pdf",
+      "best_tfidf_score": 0.27904489172002084,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_249.pdf",
+      "best_match_doc": "Act_Content_3482.pdf",
+      "best_tfidf_score": 0.44345473196656177,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_25.pdf",
+      "best_match_doc": "Act_Content_187.pdf",
+      "best_tfidf_score": 0.5217567489799553,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 4,
+      "best_match_legal_count": 4
+    },
+    {
+      "query_doc": "Act_Content_26.pdf",
+      "best_match_doc": "Act_Content_3061.pdf",
+      "best_tfidf_score": 0.49908466132637574,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_27.pdf",
+      "best_match_doc": "Act_Content_4298.pdf",
+      "best_tfidf_score": 0.3260275480174354,
+      "best_jaccard": 0.16666666666666666,
+      "best_weighted_jaccard": 0.10895556056703684,
+      "query_legal_count": 2,
+      "best_match_legal_count": 5
+    },
+    {
+      "query_doc": "Act_Content_28.pdf",
+      "best_match_doc": "Act_Content_2587.pdf",
+      "best_tfidf_score": 0.5835238703392969,
+      "best_jaccard": 0.45454545454545453,
+      "best_weighted_jaccard": 0.41200479134247175,
+      "query_legal_count": 10,
+      "best_match_legal_count": 6
+    },
+    {
+      "query_doc": "Act_Content_29.pdf",
+      "best_match_doc": "Act_Content_4495.pdf",
+      "best_tfidf_score": 0.6674578508902815,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_3.pdf",
+      "best_match_doc": "Act_Content_685.pdf",
+      "best_tfidf_score": 0.4838359406926793,
+      "best_jaccard": 0.0,
+      "best_weighted_jaccard": 0.0,
+      "query_legal_count": 1,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_30.pdf",
+      "best_match_doc": "Act_Content_2937.pdf",
+      "best_tfidf_score": 0.6699322722067096,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_31.pdf",
+      "best_match_doc": "Act_Content_280.pdf",
+      "best_tfidf_score": 0.7072019598899655,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_32.pdf",
+      "best_match_doc": "Act_Content_28.pdf",
+      "best_tfidf_score": 0.5940827077561827,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_33.pdf",
+      "best_match_doc": "Act_Content_3015.pdf",
+      "best_tfidf_score": 0.33403050165692416,
+      "best_jaccard": 0.2,
+      "best_weighted_jaccard": 0.15179157688166986,
+      "query_legal_count": 2,
+      "best_match_legal_count": 10
+    },
+    {
+      "query_doc": "Act_Content_34.pdf",
+      "best_match_doc": "Act_Content_2609.pdf",
+      "best_tfidf_score": 0.39250062551806053,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_35.pdf",
+      "best_match_doc": "Act_Content_4502.pdf",
+      "best_tfidf_score": 0.6334273036273839,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_36.pdf",
+      "best_match_doc": "Act_Content_356.pdf",
+      "best_tfidf_score": 0.7182434759977419,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_37.pdf",
+      "best_match_doc": "Act_Content_4354.pdf",
+      "best_tfidf_score": 0.4041799729528123,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_38.pdf",
+      "best_match_doc": "Act_Content_4095.pdf",
+      "best_tfidf_score": 0.5435012930669868,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_39.pdf",
+      "best_match_doc": "Act_Content_2183.pdf",
+      "best_tfidf_score": 0.3421476302808416,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_4.pdf",
+      "best_match_doc": "Act_Content_427.pdf",
+      "best_tfidf_score": 0.623570009242443,
+      "best_jaccard": 0.75,
+      "best_weighted_jaccard": 0.6954282929272776,
+      "query_legal_count": 4,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_40.pdf",
+      "best_match_doc": "Act_Content_637.pdf",
+      "best_tfidf_score": 0.4435055210679941,
+      "best_jaccard": 0.0,
+      "best_weighted_jaccard": 0.0,
+      "query_legal_count": 2,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_41.pdf",
+      "best_match_doc": "Act_Content_3577.pdf",
+      "best_tfidf_score": 0.40055936630752265,
+      "best_jaccard": 0.1111111111111111,
+      "best_weighted_jaccard": 0.06636393391889377,
+      "query_legal_count": 8,
+      "best_match_legal_count": 2
+    },
+    {
+      "query_doc": "Act_Content_42.pdf",
+      "best_match_doc": "Act_Content_185.pdf",
+      "best_tfidf_score": 0.28732324993843233,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_43.pdf",
+      "best_match_doc": "Act_Content_3198.pdf",
+      "best_tfidf_score": 0.3524592017779421,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_44.pdf",
+      "best_match_doc": "Act_Content_3933.pdf",
+      "best_tfidf_score": 0.32523722594955834,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_45.pdf",
+      "best_match_doc": "Act_Content_402.pdf",
+      "best_tfidf_score": 0.3308353563093811,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_46.pdf",
+      "best_match_doc": "Act_Content_2291.pdf",
+      "best_tfidf_score": 0.3726634155134627,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_47.pdf",
+      "best_match_doc": "Act_Content_2751.pdf",
+      "best_tfidf_score": 0.2788507329778757,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_48.pdf",
+      "best_match_doc": "Act_Content_1413.pdf",
+      "best_tfidf_score": 0.49870546672850147,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_49.pdf",
+      "best_match_doc": "Act_Content_2109.pdf",
+      "best_tfidf_score": 0.35515088739826456,
+      "best_jaccard": 0.6,
+      "best_weighted_jaccard": 0.585929069266616,
+      "query_legal_count": 5,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_5.pdf",
+      "best_match_doc": "Act_Content_3802.pdf",
+      "best_tfidf_score": 0.2908496445900777,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_50.pdf",
+      "best_match_doc": "Act_Content_3141.pdf",
+      "best_tfidf_score": 0.519516219626852,
+      "best_jaccard": 0.0,
+      "best_weighted_jaccard": 0.0,
+      "query_legal_count": 3,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_51.pdf",
+      "best_match_doc": "Act_Content_2291.pdf",
+      "best_tfidf_score": 0.40342912045082124,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_52.pdf",
+      "best_match_doc": "Act_Content_2732.pdf",
+      "best_tfidf_score": 0.11703997607583205,
+      "best_jaccard": 0.16666666666666666,
+      "best_weighted_jaccard": 0.10895556056703684,
+      "query_legal_count": 5,
+      "best_match_legal_count": 2
+    },
+    {
+      "query_doc": "Act_Content_53.pdf",
+      "best_match_doc": "Act_Content_3447.pdf",
+      "best_tfidf_score": 0.21285290104339177,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_54.pdf",
+      "best_match_doc": "Act_Content_2909.pdf",
+      "best_tfidf_score": 0.5456569658533146,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_55.pdf",
+      "best_match_doc": "Act_Content_3987.pdf",
+      "best_tfidf_score": 0.4794592598286291,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_56.pdf",
+      "best_match_doc": "Act_Content_283.pdf",
+      "best_tfidf_score": 0.6269446813057519,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_57.pdf",
+      "best_match_doc": "Act_Content_4031.pdf",
+      "best_tfidf_score": 0.22034521264869703,
+      "best_jaccard": 0.4,
+      "best_weighted_jaccard": 0.35981038997142667,
+      "query_legal_count": 2,
+      "best_match_legal_count": 5
+    },
+    {
+      "query_doc": "Act_Content_58.pdf",
+      "best_match_doc": "Act_Content_1613.pdf",
+      "best_tfidf_score": 0.5185802936737949,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_59.pdf",
+      "best_match_doc": "Act_Content_4773.pdf",
+      "best_tfidf_score": 0.19760298048930705,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_6.pdf",
+      "best_match_doc": "Act_Content_4197.pdf",
+      "best_tfidf_score": 0.3337438234401028,
+      "best_jaccard": 0.6666666666666666,
+      "best_weighted_jaccard": 0.6356554736407174,
+      "query_legal_count": 8,
+      "best_match_legal_count": 7
+    },
+    {
+      "query_doc": "Act_Content_60.pdf",
+      "best_match_doc": "Act_Content_2730.pdf",
+      "best_tfidf_score": 0.6897063642338006,
+      "best_jaccard": 0.0,
+      "best_weighted_jaccard": 0.0,
+      "query_legal_count": 4,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_61.pdf",
+      "best_match_doc": "Act_Content_524.pdf",
+      "best_tfidf_score": 0.3049318937896286,
+      "best_jaccard": 0.1,
+      "best_weighted_jaccard": 0.06223385075956753,
+      "query_legal_count": 6,
+      "best_match_legal_count": 5
+    },
+    {
+      "query_doc": "Act_Content_62.pdf",
+      "best_match_doc": "Act_Content_3947.pdf",
+      "best_tfidf_score": 0.3172569469299362,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_63.pdf",
+      "best_match_doc": "Act_Content_816.pdf",
+      "best_tfidf_score": 0.4226776116996765,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_64.pdf",
+      "best_match_doc": "Act_Content_788.pdf",
+      "best_tfidf_score": 0.46636237949231407,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_65.pdf",
+      "best_match_doc": "Act_Content_3579.pdf",
+      "best_tfidf_score": 0.2687621436066495,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_66.pdf",
+      "best_match_doc": "Act_Content_4001.pdf",
+      "best_tfidf_score": 0.609991497898043,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_67.pdf",
+      "best_match_doc": "Act_Content_707.pdf",
+      "best_tfidf_score": 0.4293664802563041,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_68.pdf",
+      "best_match_doc": "Act_Content_1153.pdf",
+      "best_tfidf_score": 0.41397147786697425,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_69.pdf",
+      "best_match_doc": "Act_Content_3938.pdf",
+      "best_tfidf_score": 0.5112620247290798,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_7.pdf",
+      "best_match_doc": "Act_Content_2799.pdf",
+      "best_tfidf_score": 0.35544226882884095,
+      "best_jaccard": 0.6363636363636364,
+      "best_weighted_jaccard": 0.6739162942033745,
+      "query_legal_count": 9,
+      "best_match_legal_count": 9
+    },
+    {
+      "query_doc": "Act_Content_70.pdf",
+      "best_match_doc": "Act_Content_3517.pdf",
+      "best_tfidf_score": 0.3309512400880338,
+      "best_jaccard": 0.0,
+      "best_weighted_jaccard": 0.0,
+      "query_legal_count": 6,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_71.pdf",
+      "best_match_doc": "Act_Content_4829.pdf",
+      "best_tfidf_score": 0.48428246348304604,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_72.pdf",
+      "best_match_doc": "Act_Content_4179.pdf",
+      "best_tfidf_score": 0.8057654069429168,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_73.pdf",
+      "best_match_doc": "Act_Content_3517.pdf",
+      "best_tfidf_score": 0.4380051201361514,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_74.pdf",
+      "best_match_doc": "Act_Content_4131.pdf",
+      "best_tfidf_score": 0.3381005783347444,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_75.pdf",
+      "best_match_doc": "Act_Content_3872.pdf",
+      "best_tfidf_score": 0.19827111020824745,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_76.pdf",
+      "best_match_doc": "Act_Content_3240.pdf",
+      "best_tfidf_score": 0.44140074677774066,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_77.pdf",
+      "best_match_doc": "Act_Content_2868.pdf",
+      "best_tfidf_score": 0.3569584581252496,
+      "best_jaccard": 0.0,
+      "best_weighted_jaccard": 0.0,
+      "query_legal_count": 4,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_78.pdf",
+      "best_match_doc": "Act_Content_814.pdf",
+      "best_tfidf_score": 0.3914815743563713,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_79.pdf",
+      "best_match_doc": "Act_Content_2213.pdf",
+      "best_tfidf_score": 0.29861136871145494,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_8.pdf",
+      "best_match_doc": "Act_Content_1957.pdf",
+      "best_tfidf_score": 0.47205456128415524,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_80.pdf",
+      "best_match_doc": "Act_Content_2554.pdf",
+      "best_tfidf_score": 0.3253729271866208,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_81.pdf",
+      "best_match_doc": "Act_Content_837.pdf",
+      "best_tfidf_score": 0.42980705194376667,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 2,
+      "best_match_legal_count": 2
+    },
+    {
+      "query_doc": "Act_Content_82.pdf",
+      "best_match_doc": "Act_Content_643.pdf",
+      "best_tfidf_score": 0.3052984799491003,
+      "best_jaccard": 0.375,
+      "best_weighted_jaccard": 0.34060381804429885,
+      "query_legal_count": 6,
+      "best_match_legal_count": 5
+    },
+    {
+      "query_doc": "Act_Content_83.pdf",
+      "best_match_doc": "Act_Content_1042.pdf",
+      "best_tfidf_score": 0.39311578031719174,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 5,
+      "best_match_legal_count": 5
+    },
+    {
+      "query_doc": "Act_Content_84.pdf",
+      "best_match_doc": "Act_Content_4924.pdf",
+      "best_tfidf_score": 0.5419182827691469,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_85.pdf",
+      "best_match_doc": "Act_Content_186.pdf",
+      "best_tfidf_score": 0.23223541205412473,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 3,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_86.pdf",
+      "best_match_doc": "Act_Content_2080.pdf",
+      "best_tfidf_score": 0.2671776413588633,
+      "best_jaccard": 0.08333333333333333,
+      "best_weighted_jaccard": 0.053300435540391225,
+      "query_legal_count": 3,
+      "best_match_legal_count": 10
+    },
+    {
+      "query_doc": "Act_Content_87.pdf",
+      "best_match_doc": "Act_Content_151.pdf",
+      "best_tfidf_score": 0.5572839172671963,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_88.pdf",
+      "best_match_doc": "Act_Content_4630.pdf",
+      "best_tfidf_score": 0.5021943708812552,
+      "best_jaccard": 0.8333333333333334,
+      "best_weighted_jaccard": 0.8456539656308109,
+      "query_legal_count": 5,
+      "best_match_legal_count": 6
+    },
+    {
+      "query_doc": "Act_Content_89.pdf",
+      "best_match_doc": "Act_Content_1341.pdf",
+      "best_tfidf_score": 0.2913603394547434,
+      "best_jaccard": 0.5,
+      "best_weighted_jaccard": 0.46499637888430767,
+      "query_legal_count": 4,
+      "best_match_legal_count": 2
+    },
+    {
+      "query_doc": "Act_Content_9.pdf",
+      "best_match_doc": "Act_Content_427.pdf",
+      "best_tfidf_score": 0.6319774212252158,
+      "best_jaccard": 0.75,
+      "best_weighted_jaccard": 0.6954282929272776,
+      "query_legal_count": 4,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_90.pdf",
+      "best_match_doc": "Act_Content_2467.pdf",
+      "best_tfidf_score": 0.4174513566234438,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_91.pdf",
+      "best_match_doc": "Act_Content_505.pdf",
+      "best_tfidf_score": 0.15004151451212652,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_92.pdf",
+      "best_match_doc": "Act_Content_2039.pdf",
+      "best_tfidf_score": 0.4772620139274344,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_93.pdf",
+      "best_match_doc": "Act_Content_3051.pdf",
+      "best_tfidf_score": 0.4520843744998042,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 2,
+      "best_match_legal_count": 2
+    },
+    {
+      "query_doc": "Act_Content_94.pdf",
+      "best_match_doc": "Act_Content_3654.pdf",
+      "best_tfidf_score": 0.5665409954931581,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 5,
+      "best_match_legal_count": 5
+    },
+    {
+      "query_doc": "Act_Content_95.pdf",
+      "best_match_doc": "Act_Content_2767.pdf",
+      "best_tfidf_score": 0.540135020034865,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_96.pdf",
+      "best_match_doc": "Act_Content_2451.pdf",
+      "best_tfidf_score": 0.40210771303580367,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 3,
+      "best_match_legal_count": 3
+    },
+    {
+      "query_doc": "Act_Content_97.pdf",
+      "best_match_doc": "Act_Content_3657.pdf",
+      "best_tfidf_score": 0.41522349803378616,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 0,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_98.pdf",
+      "best_match_doc": "Act_Content_3782.pdf",
+      "best_tfidf_score": 0.37987840945207274,
+      "best_jaccard": 0.0,
+      "best_weighted_jaccard": 0.0,
+      "query_legal_count": 1,
+      "best_match_legal_count": 0
+    },
+    {
+      "query_doc": "Act_Content_99.pdf",
+      "best_match_doc": "Act_Content_3089.pdf",
+      "best_tfidf_score": 0.6559977036070399,
+      "best_jaccard": 1.0,
+      "best_weighted_jaccard": 1.0,
+      "query_legal_count": 7,
+      "best_match_legal_count": 7
+    }
+  ]
+}

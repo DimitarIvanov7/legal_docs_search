@@ -7,29 +7,41 @@ PDF_DIR = Path("Data/Documents")
 INDEX_DIR = Path("index")
 INDEX_DIR.mkdir(exist_ok=True)
 
-documents_tokens = {}
+documents_text_tokens = {}
+documents_legal_tokens = {}
+
 counter = 1
 
 for pdf_file in PDF_DIR.glob("*.pdf"):
-    tokens = process_pdf(pdf_file)
-    documents_tokens[pdf_file.name] = tokens
+    text_tokens, legal_tokens = process_pdf(pdf_file)
+
+    documents_text_tokens[pdf_file.name] = text_tokens
+    documents_legal_tokens[pdf_file.name] = legal_tokens
+
     print(counter)
     counter += 1
 
-print(f"Indexed {len(documents_tokens)} documents")
+print(f"Indexed {len(documents_text_tokens)} documents")
 
-# Build TF-IDF
 engine = TfidfSearchEngine()
-engine.build_index(documents_tokens)
+engine.build_index(documents_text_tokens, documents_legal_tokens)
 
-# Save JSONs
-with open(INDEX_DIR / "documents_tokens.json", "w", encoding="utf-8") as f:
-    json.dump(documents_tokens, f, ensure_ascii=False)
+with open(INDEX_DIR / "documents_text_tokens.json", "w", encoding="utf-8") as f:
+    json.dump(documents_text_tokens, f, ensure_ascii=False)
 
-with open(INDEX_DIR / "idf.json", "w", encoding="utf-8") as f:
-    json.dump(engine.idf, f, ensure_ascii=False)
+with open(INDEX_DIR / "documents_legal_tokens.json", "w", encoding="utf-8") as f:
+    json.dump(documents_legal_tokens, f, ensure_ascii=False)
 
-with open(INDEX_DIR / "tfidf_docs.json", "w", encoding="utf-8") as f:
-    json.dump(engine.tfidf_docs, f, ensure_ascii=False)
+with open(INDEX_DIR / "idf_text.json", "w", encoding="utf-8") as f:
+    json.dump(engine.idf_text, f, ensure_ascii=False)
 
-print("TF-IDF index saved.")
+with open(INDEX_DIR / "idf_legal.json", "w", encoding="utf-8") as f:
+    json.dump(engine.idf_legal, f, ensure_ascii=False)
+
+with open(INDEX_DIR / "tfidf_docs_text.json", "w", encoding="utf-8") as f:
+    json.dump(engine.tfidf_docs_text, f, ensure_ascii=False)
+
+with open(INDEX_DIR / "tfidf_docs_legal.json", "w", encoding="utf-8") as f:
+    json.dump(engine.tfidf_docs_legal, f, ensure_ascii=False)
+
+print("TF-IDF index saved (text + legal).")
