@@ -154,7 +154,7 @@ def extract_reference_tokens(text, start, end, law):
 
             for a in nums:
                 current_article = a
-                tokens.add(f"_чл:{a}_{law}")
+                tokens.add(f"чл:{a}_{law}")
 
         # параграф
         elif level == "§":
@@ -220,7 +220,6 @@ def extract_reference_tokens(text, start, end, law):
 
     return ["LEGAL:" + token for token in tokens ]
 
-# ================= MAIN =================
 
 def main():
     all_tokens = []

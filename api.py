@@ -7,6 +7,8 @@ from starlette.responses import FileResponse
 
 from search import tf_idf_search
 
+from fastapi.middleware.cors import CORSMiddleware
+
 app = FastAPI(title="TF-IDF Legal Search")
 
 UPLOAD_DIR = Path("tmp")
@@ -14,7 +16,6 @@ UPLOAD_DIR.mkdir(exist_ok=True)
 
 DOCUMENTS_DIR = Path("Data/Documents")
 
-from fastapi.middleware.cors import CORSMiddleware
 
 app.add_middleware(
     CORSMiddleware,

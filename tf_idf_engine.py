@@ -3,10 +3,6 @@ from collections import Counter, defaultdict
 from typing import Dict, List, Tuple
 
 
-# =========================
-# TF / IDF CORE
-# =========================
-
 def compute_tf(tokens: List[str]) -> Dict[str, float]:
     """
     TF = 1 + log10(freq)
@@ -50,9 +46,6 @@ def compute_tfidf_vector(tokens: List[str], idf: Dict[str, float]) -> Dict[str, 
     return tfidf
 
 
-# =========================
-# COSINE SIMILARITY
-# =========================
 
 def cosine_similarity_sparse(
     v1: Dict[str, float],
@@ -73,10 +66,6 @@ def cosine_similarity_sparse(
 
     return numerator / (norm_v1 * norm_v2)
 
-
-# =========================
-# INDEX BUILDING
-# =========================
 
 class TfidfSearchEngine:
     def __init__(self):
@@ -123,14 +112,10 @@ class TfidfSearchEngine:
         return scores[:top_k]
 
 
-# =========================
-# EXAMPLE USAGE
-# =========================
 
+
+# testing
 if __name__ == "__main__":
-    # --------------------------------------------------
-    # Example documents (replace with your real pipeline)
-    # --------------------------------------------------
 
     documents_tokens = {
         "doc1.pdf": [
@@ -152,16 +137,10 @@ if __name__ == "__main__":
     documents_tokens["doc1.pdf"].extend(["чл_45_ззд"] * LEGAL_BOOST)
     documents_tokens["doc2.pdf"].extend(["чл_49_ззд"] * LEGAL_BOOST)
 
-    # --------------------------------------------------
-    # Build index
-    # --------------------------------------------------
 
     engine = TfidfSearchEngine()
     engine.build_index(documents_tokens)
 
-    # --------------------------------------------------
-    # Query
-    # --------------------------------------------------
 
     query_tokens = [
         "чл_45", "ззд", "обезщетен", "вред"

@@ -104,8 +104,9 @@ try:
 
 
         for url in download_urls:
-            download_file(url,counter)
-            counter+=1
+            if type(url) == str:
+                download_file(url,counter)
+                counter+=1
 
         if page < PAGES_TO_CRAWL:
             next_button = wait.until(

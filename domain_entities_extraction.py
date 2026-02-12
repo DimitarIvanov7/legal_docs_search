@@ -4,7 +4,6 @@ from domain_entities_normalization import (extract_reference_tokens)
 
 
 # CONFIG
-
 PDF_DIR = Path("Data/Documents")
 
 terminalStrings = {
@@ -151,7 +150,6 @@ def is_any_abbreviation(text: str, i: int) -> int:
 
 
 # MAIN PARSER
-
 def extract_domain_entities(text):
     startTrie = constructTrie(terminalStrings)
 

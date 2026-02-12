@@ -15,7 +15,7 @@ function App() {
 
   const handleSubmit = async () => {
     if (!file) {
-      setError("Please select a PDF file.");
+      setError("Моля изберете PDF файл.");
       return;
     }
 
@@ -32,13 +32,13 @@ function App() {
       });
 
       if (!response.ok) {
-        throw new Error("Search failed");
+        throw new Error("Търсенето се провали");
       }
 
       const data = await response.json();
       setResults(data.results);
     } catch (err) {
-      setError("Error searching for similar documents.");
+      setError("Грешка при търсенето.");
     } finally {
       setLoading(false);
     }
@@ -46,7 +46,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Legal Document Similarity Search</h1>
+      <h1>Търсачка на подобни съдебни дела</h1>
 
       <div className="upload-box">
         <input
@@ -55,7 +55,7 @@ function App() {
           onChange={handleFileChange}
         />
         <button onClick={handleSubmit} disabled={loading}>
-          {loading ? "Searching..." : "Upload & Search"}
+          {loading ? "Търсене..." : "Търсене"}
         </button>
       </div>
 
@@ -63,32 +63,24 @@ function App() {
 
       {results.length > 0 && (
         <div className="results">
-          <h2>Similar Documents</h2>
+          <h2>Подобни документи</h2>
           <ul>
             {results.map((r, idx) => (
               <li key={idx}>
                 <div>
-    <strong>{r.document}</strong>
-    <span className="score">score: {r.score}</span>
-  </div>
+                  <strong>{r.document} |</strong>
+                  <span className="score">близост: {r.score}</span>
+                </div>
 
-  <div className="actions">
-    <a
-      href={r.download_url}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Open
-    </a>
-
-    <a
-      href={r.download_url}
-      download
-      style={{ marginLeft: "10px" }}
-    >
-      Download
-    </a>
-  </div>
+                <div className="actions">
+                  <a
+                    href={r.download_url}
+                    download
+                    style={{ marginLeft: "10px" }}
+                  >
+                    Изтегли
+                  </a>
+                </div>
               </li>
             ))}
           </ul>

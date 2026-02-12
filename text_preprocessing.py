@@ -4,17 +4,17 @@ import unicodedata
 import json
 import re
 
-from src.domain_entities_extraction import extract_domain_entities
-from src.domain_entities_normalization import extract_text_from_pdf
+from domain_entities_extraction import extract_domain_entities
+from domain_entities_normalization import extract_text_from_pdf
 
-from src.stemmer.bulgarian_stemmer import BulgarianStemmer
+from stemmer.bulgarian_stemmer import BulgarianStemmer
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "Data"
 
 stemmer = (
-    BulgarianStemmer(r"C:\Projects\PycharmProjects\legal_docs_search\src\stemmer\stem_rules_context_1.txt"
-)) # or .txt
+    BulgarianStemmer(r"C:\Projects\PycharmProjects\legal_docs_search\stemmer\stem_rules_context_1.txt"
+)) 
 
 
 SENSITIVE_MARKERS = [
@@ -103,7 +103,7 @@ def preprocess(text: str) -> list[str]:
     text = remove_sensitive_markers(text)
     tokens = tokenize(text)
 
-    stop_words = load_json(DATA_DIR / "stopwords.json")
+    stop_words = load_json(str(DATA_DIR / "stopwords.json"))
 
     cleaned = []
     for token in tokens:
