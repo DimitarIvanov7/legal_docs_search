@@ -11,7 +11,7 @@ LEGAL_LAMBDA = 1.8
 W_TEXT = 1.0 / (1.0 + LEGAL_LAMBDA)
 W_LEGAL = LEGAL_LAMBDA / (1.0 + LEGAL_LAMBDA)
 
-# (по избор, но силно препоръчително) boost по специфичност за LEGAL:* токени
+# boost по специфичност за LEGAL:* токени
 LEGAL_SPEC_LOG_WEIGHT = 0.8
 _LEGAL_LEVEL_RE = re.compile(r"(чл:|§:|ал:|т:)")
 
